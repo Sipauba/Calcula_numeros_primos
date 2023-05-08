@@ -1,3 +1,7 @@
-num = input("Informe um número: ")
+num = int(input("Informe um numero: "))
+i = 0 
+aux = False
 
-if num%2 == 0 :
+if (num!=2):
+    while (i>1) :
+        if
