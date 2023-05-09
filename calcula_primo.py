@@ -1,12 +1,19 @@
 num = int(input("Informe um numero: "))
 i = 0 
-aux = False
+aux = True
 
 if (num!=2):
     i = num//2
-    while i>1:
-        
-      
-
+    while i > 1:
+        if num%i == 0 :
+            aux = False
+            break
+        else :
+            i = i - 1            
 else:
-    aux = True
+    print('O número {} não é primo.'.format(num))
+
+if aux == True :
+    print('O número {} é primo.'.format(num))
+else:
+    print('O número {} não é primo.'.format(num))
